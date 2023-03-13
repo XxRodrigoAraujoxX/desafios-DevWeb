@@ -14,20 +14,33 @@
         body{
             background-color: rgb(165, 212, 231);
             font-family: Arial, Helvetica, sans-serif;
-            margin: 50px auto 10px;
         }
         main{
-            margin: auto;
+            height: 88vh;
+            position: relative;
+            min-width: 300px;
+            min-height: 500px;
+
+        }
+        section{
             padding: 5px;
             border-radius: 20px;
             background-color: white;
-            width: 300px;
-            height: 500px;
+            max-width: 300px;
+            min-height: 500px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
 
         }
         div{
             margin: auto;
             padding: 7px;
+            min-width: 290px;
+            min-height: 286px;
         }
         img{
             display: block;
@@ -67,14 +80,16 @@
 
 <body>
     <main>
-        <div>
-            <img src="images/image-qr-code.png" alt="Código QR">
-        </div>
-        <article>
-            <p>Aponte a câmera do seu celular para este QR CODE !</p>
-        
-            <p id="transparente">Escâneie o QR code para visitar o site Frontend Mentor para encontrar diversos desafios de código </p>
-        </article>
+        <section>
+            <div>
+                <img src="images/image-qr-code.png" alt="Código QR">
+            </div>
+            <article>
+                <p>Aponte a câmera do seu celular para este QR CODE !</p>
+            
+                <p id="transparente">Escâneie o QR code para visitar o site Frontend Mentor para encontrar diversos desafios de código </p>
+            </article>
+        </section>
     </main>
     <footer>
         <p>desafio feito por <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub">Frontend Mentor</a></p>
