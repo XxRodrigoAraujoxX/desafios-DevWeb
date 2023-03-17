@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de Pedido</title>
+    <link rel="shortcut icon" href="order-summary-component-main/images/favicon-32x32.png" type="image/x-icon">
+    <style>
+     
+        body{
+            margin:auto;
+            background-image: url('order-summary-component-main/images/pattern-background-desktop.svg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(140, 212, 212);
+        }
+        div #foto{
+            width: 400px;
+            border-radius: 20px 20px 0px 0px ;
+        }
+        img #foto{
+            width: 400px;
+           
+        }
+        main{
+            background-color: white;
+            height: 97vh;
+            width: 400px;
+            height: 500px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .principal{
+            font-size: 14px;
+            width: 200px;
+            text-align: center;
+            margin: auto;
+            color: #00000065;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        #pagamento{
+            background-color: rgb(23, 3, 141);
+            color: white;
+            border-radius: 10px;
+            width: 300px;
+            height: 30px;
+            text-align: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="foto"><img id="foto" src="order-summary-component-main/images/illustration-hero.svg" alt=""></div>
+            <article>
+                <h1>Pedido de Compra</h1>
+                <p class="principal">Você agora pode ouvir milhões de Musicas, Audiobooks e Podcasts que você quiser e onde você quiser !</p>
+                <div>
+                    <div class="planos">
+                        <img src="order-summary-component-main/images/icon-music.svg" alt="icone musica">
+                        <p class="pl">Plano anual </p> <p class="pl1">R$59,99</p>
+                    </div>
+                    <a class="mudar" href="#">Mudar Plano</a>
+                </div>
+                <div id="pagamento"><a href="#">Prosseguir com Pagamento</a></div>
+                <div id="cancelar"><a href="#">Cancelar Pedido</a></div>
+            </article>
+    </main>
+</body>
+</html>
